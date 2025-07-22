@@ -1,11 +1,14 @@
-public class Main {
-    public static void main(String[] args) {
-        
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
 
-        for (int i = 1; i <= 5; i++) {
-            
-            System.out.println("i = " + i);
-        }
+public class work {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Имя пользователя: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Привет, " + name);
+
+        scanner.close();
     }
 }
